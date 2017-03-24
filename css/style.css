@@ -1,0 +1,122 @@
+@import url(css/reset.css);
+/*Настройки макета*/
+body {
+	width: 100%;
+}
+header,
+footer {
+	height: 100px;
+	background-color: #025167;
+}
+main {
+	height: 1000px;
+	background-image: url(../image/background/ep_naturalblack.png);
+	display: flex;/*Одинаковые зазоры по вертикали в main*/
+	flex-flow: column nowrap;/*Одинаковые зазоры по вертикали в main*/
+	justify-content: space-around;/*Одинаковые зазоры по вертикали в main*/
+}
+article {
+	height: 600px;
+}
+aside {
+	height: 300px;
+	background-color: #2E8B57;/*Оформление*/
+	border: 2px solid #006400;/*Оформление*/
+	border-radius: 2px;/*Оформление*/
+}
+.mid {
+	width: 1024px;
+	margin: 0 auto;
+}
+/*Логотип*/
+div.logo {
+	background:#216477;
+	border:6px inset #ffffff;
+	box-shadow:3px 3px 1px #7a1848;
+	border-radius:15px 15px 15px 15px;
+}
+div.up,
+div.up ul {
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0;
+}
+div.up {
+	height: 100px;
+}
+div.up h1 {
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+/*Стили для ссылок*/
+.icon-social li {
+	margin-right: 10px;
+}
+.icon-social li a div {
+	width: 32px;
+	height: 32px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	background-size: 32px 32px;
+}
+.icon-social li a div:hover {
+	transform: scale(1.5) rotate(15deg);
+}
+.icon-social li a div.facebook{
+	background-image: url(../image/icon/facebook-logo-button.png);
+}
+.icon-social li a div.facebook:hover {
+	background-image: url(../image/icon/hover/facebook-logo-button.png);
+}
+.icon-social li a div.vk {
+	background-image: url(../image/icon/vk-social-logotype.png);
+}
+.icon-social li a div.vk:hover {
+	background-image: url(../image/icon/hover/vk-social-logotype.png);
+}
+.icon-social li a div.git {
+	background-image: url(../image/icon/github.png);
+}
+.icon-social li a div.git:hover {
+	background-image: url(../image/icon/hover/github.png); 
+}
+/*Конец стилей иконок соцсетей*/
+/*Колонки внутри article*/
+article {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+article div.photo {
+	flex: 2 1 400px;
+	order: 2;	
+}
+article div.btn{
+	flex: 1 1 200px;
+	order: 1;
+}
+article div.port {
+	flex: 1 1 200px;
+	order: 3;
+}
+/*Стиль фото*/
+article div.photo img {
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+article div.photo img:hover {
+	transform: scale(1.1);
+}
+/*Стиль теста под фото*/
+article div.photo h2 {
+	font-size: 28px;
+	color: #ffffff;
+	text-align: center;
+}
