@@ -12,9 +12,10 @@ div.section{
 	justify-content: space-around;
 	align-items: flex-end;
 	flex: 1 1;
+	transition: all 0.7s;
 }
 div.section:hover {
-	flex: 1.5; 
+	transform: scale(2); 
 }
 div.one {
 	background: url(../image/doc/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%B2%D0%B5%D0%B1%20%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8.jpg) no-repeat;
@@ -25,13 +26,16 @@ div.two {
 	background-size: contain;
 }
 div.three {
-	background: url();
+	background: url(../image/doc/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20HTML%20%D0%B8%20CSS.jpg);
+	background-size: contain;
 }
 div.four {
-	background: url();
+	background: url(../image/doc/%D0%A2%D0%B5%D1%81%D1%82%20%D0%BF%D0%BE%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%BB%D0%BC%D1%83%20JAVA.jpg);
+	background-size: contain;
 }
 div.five {
-	background: url();
+	background: url(../image/doc/Git%20%D0%B1%D1%8B%D1%81%D1%82%D1%80%D1%8B%D0%B9%20%D1%81%D1%82%D0%B0%D1%80%D1%82.jpg);
+	background-size: contain;
 }
 div.section div.text {
 	visibility: hidden;
@@ -40,4 +44,22 @@ div.section div.text {
 }
 div.section:hover div.text {
 	visibility: visible;
+}
+div.section div.text a span {
+	font:bold 12px Verdana, Geneva, sans-serif;
+	font-style:normal;
+	color:#ffffff;
+	background:#025167;
+	border:2px none #025167;
+	text-shadow:0px -1px 4px #0a0a0a;
+	box-shadow:0px -1px 6px #000000;
+	-moz-box-shadow:0px -1px 6px #000000;
+	-webkit-box-shadow:0px -1px 6px #000000;
+	border-radius:30px 30px 30px 30px;
+	-moz-border-radius:30px 30px 30px 30px;
+	-webkit-border-radius:30px 30px 30px 30px;
+	padding:18px 46px;
+}
+div.section div.text a {
+	text-decoration: none;
 }

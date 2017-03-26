@@ -20,7 +20,9 @@ article {
 	height: 600px;
 }
 aside {
-	height: 150px;
+	height: 130px;
+	position: relative;
+	bottom: 100px;
 }
 .mid {
 	max-width: 1020px;
@@ -32,6 +34,11 @@ div.logo {
 	border:6px inset #ffffff;
 	box-shadow:3px 3px 1px #7a1848;
 	border-radius:15px 15px 15px 15px;
+}
+div.logo:hover {
+	background:#ffffff;
+	transform: scale(1.2);
+	transition: all 0.5s;
 }
 div.up,
 div.up ul {
@@ -117,6 +124,8 @@ article div.photo h2 {
 	font-size: 28px;
 	color: #ffffff;
 	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 /*Стиль теста под фото*/
 div.photo p {
