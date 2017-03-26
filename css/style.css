@@ -1,4 +1,5 @@
-@import url(css/reset.css);
+@import url(reset.css);
+@import url(banner.css);
 /*Настройки макета*/
 body {
 	width: 100%;
@@ -19,13 +20,10 @@ article {
 	height: 600px;
 }
 aside {
-	height: 300px;
-	background-color: #2E8B57;/*Оформление*/
-	border: 2px solid #006400;/*Оформление*/
-	border-radius: 2px;/*Оформление*/
+	height: 150px;
 }
 .mid {
-	max-width: 1024px;
+	max-width: 1020px;
 	margin: 0 auto;
 }
 /*Логотип*/
@@ -120,3 +118,9 @@ article div.photo h2 {
 	color: #ffffff;
 	text-align: center;
 }
+/*Стиль теста под фото*/
+div.photo p {
+	color: #fff;
+	font-size:  18px;
+}
+/*Стили баннера*/
